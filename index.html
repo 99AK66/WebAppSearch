@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base target="_top">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+   
+    <iframe src="https://script.google.com/macros/s/AKfycbxz78Pa7-PMLTVVj_kMSfdOh4-CzGLTOCOGRWgaMI_H8AbeYyRSkPHE1QURm42JH4DL/exec"></iframe>
+
+    <script>
+       
+        window.onload = function() {
+            var iframe = document.querySelector('iframe');
+            iframe.onload = function() {
+                console.log("Iframe loaded successfully");
+            };
+            iframe.onerror = function() {
+                console.error("Error loading iframe content");
+            };
+        };
+    </script>
+</body>
+</html>
